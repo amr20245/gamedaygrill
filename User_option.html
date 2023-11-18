@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-width: 300px;
+        }
+
+        .img-box {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* or object-fit: contain; depending on your preference */
+        }
+
+        .item-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-item">
+        <div class="img-box">
+            <img src="path/to/image1.jpg" alt="Food Item 1">
+        </div>
+        <div class="item-info">
+            <h2>Food Item 1</h2>
+            <p>Description of the first food item.</p>
+            <p>Price: $10.99</p>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="img-box">
+            <img src="path/to/image2.jpg" alt="Food Item 2">
+        </div>
+        <div class="item-info">
+            <h2>Food Item 2</h2>
+            <p>Description of the second food item.</p>
+            <p>Price: $12.99</p>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="img-box">
+            <img src="path/to/image3.jpg" alt="Food Item 3">
+        </div>
+        <div class="item-info">
+            <h2>Food Item 3</h2>
+            <p>Description of the third food item.</p>
+            <p>Price: $8.99</p>
+        </div>
+    </div>
+
+    <!-- Add more menu items as needed -->
+
+</body>
+
+</html>
