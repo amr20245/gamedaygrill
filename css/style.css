@@ -579,7 +579,7 @@ a:focus {
 }
 
 .food_section .box .options a svg {
-  width: 25px;
+  width: 18px;
   height: auto;
   fill: #ffffff;
 }
@@ -596,7 +596,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .food_section .btn-box a {
@@ -604,7 +604,7 @@ a:focus {
   padding: 10px 55px;
   background-color: #ffbe33;
   color: #ffffff;
-  border-radius: 78px;
+  border-radius: 45px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
