@@ -39,6 +39,38 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <script src="store.js"></script>
 
+  <style>
+    /* Add custom styles for the header background */
+    .header_section {
+      background-color: #333; /* Change this to your desired header background color */
+      color: #fff; /* Change this to your desired text color for the header */
+    }
+
+    /* Add custom styles for the main content background */
+    body {
+      background-color: #fff; /* Change this to your desired main content background color */
+    }
+
+    /* Add styles for the contact form */
+    .contact_form {
+      margin-top: 50px;
+    }
+
+    .contact_form input,
+    .contact_form textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    .contact_form button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
@@ -47,7 +79,7 @@
     <div class="bg-box">
       <img src="images/hero-bg.jpg" alt="">
     </div>
-    <!-- header section strats -->
+    <!-- header section starts -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -58,53 +90,94 @@
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class=""> </span>
-  </button>
-  
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="menu.html">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="book.html">Book Table</a>
-      </li>
-      <!-- More Option with Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button" data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="false">
-          More
-        </a>
-        <li class="nav-item active">
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
 
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
-          <a class="dropdown-item" href="team.html">Team</a>
-          <a class="dropdown-item" href="contact.html">Contact</a>
-          <!-- Add more items here as needed -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="book.html">Book Table</a>
+              </li>
+              <!-- More Option with Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                  More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
+                  <a class="dropdown-item" href="team.html">Team</a>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                  <!-- Add more items here as needed -->
+                </div>
+              </li>
+            </ul>
+            <div class="user_option">
+              <!-- Your existing user options go here -->
+              <a href="menu.html" class="order_online">
+                Order Online
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+ <!-- Contact Form Section -->
+<section class="contact_section" style="background-color: #333; padding: 40px 0;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <div class="contact_form">
+            <h2 style="color: white; margin-bottom: 30px;">Contact Us</h2>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="First Name" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Last Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="4" placeholder="Your Questions" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="color: white;">Submit</button>
+            </form>
+          </div>
         </div>
-      </li>
-    </ul>
-    <div class="user_option">
-      <!-- Your existing user options go here -->
-      <a href="menu.html" class="order_online">
-        Order Online
-      </a>
-    </div>
-  </div>
-  </nav>
-  </div>
-  </header>
-  <!-- end header section -->
-  <section class="contact_section ">
-    
+        <div class="col-md-6 mt-4 text-center">
+          <div>
+            <div style="height: 20px;"></div>
+            <div style="height: 20px;"></div>
+            <div style="height: 20px;"></div>
+            <div style="height: 20px;"></div>
+            <div style="height: 20px;"></div>
+            <div style="height: 20px;"></div>
 
+            <h5 style="color: white;">You can also call us at: <strong>800 GRILL FUN</strong></h5>
+            <div style="height: 20px;"></div>
+            <div style="height: 20px;"></div>
+            <div style="height: 20px;"></div>
+
+            <h5 style="color: white;">Or mail us at: <strong>Fairfield High School, 8800 Holden Blvd, Fairfield, Ohio 45014</strong></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End Contact Form Section -->
 
 
 
