@@ -986,7 +986,6 @@ a:focus {
   margin: 0 2.5px;
   font-size: 18px;
 }
-
 .footer_section .footer_social a:hover {
   color: #ffbe33;
 }
@@ -1004,4 +1003,57 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
+
+  /* Add this to your existing styles or update accordingly */
+
+  /* Add custom styles for the header background */
+  .header_section {
+    background-color: #333; /* Change this to your desired header background color */
+    color: #fff; /* Change this to your desired text color for the header */
+  }
+
+  /* Add custom styles for the main content background */
+  body {
+    background-color: #fff; /* Change this to your desired main content background color */
+  }
+
+  /* Team Member Box Styles */
+  .team_member_box {
+    background-color: #c2bebe; /* Light gray background color */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #333; /* Black border */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+  }
+
+  .team_member_box h4 {
+    color: #333; /* Black text color */
+    margin-bottom: 10px;
+  }
+
+  .team_member_box p {
+    color: #666; /* Dark gray text color */
+  }
+
+  /* Add styles for the contact form */
+  .contact_form {
+    margin-top: 50px;
+  }
+
+  .contact_form input,
+  .contact_form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .contact_form button {
+    background-color: #333;
+    color: #867878;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
 /*# sourceMappingURL=style.css.map */
