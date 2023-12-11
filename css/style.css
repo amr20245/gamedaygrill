@@ -1055,5 +1055,11 @@ a:focus {
     border: none;
     cursor: pointer;
   }
+    .carousel-item img {
+    max-height: 1000px; /* Adjust the maximum height as needed */
+    width: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default inline styling */
+    margin: 0 auto; /* Center the image */
+  }
 
 /*# sourceMappingURL=style.css.map */
