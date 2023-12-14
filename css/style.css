@@ -435,13 +435,14 @@ a:focus {
 }
 
 .offer_section .box .detail-box h5 {
-  font-family: 'Dancing Script', cursive;
+  font-family:Arial;
   font-size: 24px;
-  margin: 0;
+  margin:0;
 }
 
 .offer_section .box .detail-box h6 {
-  font-family: 'Dancing Script', cursive;
+  font-family: Arial;
+  font-size: 24px;
   margin: 10px 0;
 }
 
