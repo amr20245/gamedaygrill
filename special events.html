@@ -1,124 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+    <title>Game Day Grill - Events</title>
+    <!-- HubSpot Embed Code -->
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/44192916.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <!-- for the themes page only -->
+    <link rel="stylesheet" type="text/css" href="css/styleforteams.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- nice select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+        integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+        crossorigin="anonymous" />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+        /* Add custom styles for the header background */
+        .header_section {
+            background-color: #333;
+            color: #fff;
+        }
 
-  <title> Game Day Grill </title>
+        /* Add custom styles for the main content background */
+        body {
+            background-color: #fff;
+        }
 
-  <!-- HubSpot Embed Code -->
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/44192916.js"></script>
-  <!-- End of HubSpot Embed Code -->
-<!--for the theams page only -->
-<link rel="stylesheet" type="text/css" href="css/styleforteams.css"
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        /* Additional styles for events section */
+        .event-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+        }
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- nice select  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+        .event-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+        }
 
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+        .event-circle span {
+            font-size: 24px;
+        }
 
-  <style>
-    /* Add custom styles for the header background */
-    .header_section {
-      background-color: #333; /* Change this to your desired header background color */
-      color: #fff; /* Change this to your desired text color for the header */
-    }
+        .event-details {
+            flex: 1;
+        }
 
-    /* Add custom styles for the main content background */
-    body {
-      background-color: #fff; /* Change this to your desired main content background color */
-    }
-  </style>
+        /* You can customize the colors and styles further */
+        .public-event {
+            background-color: #e5f7ff;
+        }
+
+        .private-event {
+            background-color: #ffd3d3;
+        }
+
+        .special-event {
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 
 <body class="sub_page">
 
- <!-- header section starts -->
-
- <body class="sub_page">
-  <div class="hero_area">
-    <div class="bg-box">
-      <img src="images/hero-bg.jpg" alt="">
-    </div>
-  <!-- header section starts -->
-  <header class="header_section">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand" href="index.html">
-          <span>
-            Game Day Grill
-          </span>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""> </span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span> </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="book.html">Book Table</a>
-             <!-- More Option with Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button" data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="false">
-          More
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
-          <a class="dropdown-item" href="team.html">Team</a>
-          <a class="dropdown-item" href="contact.html">Contact</a>
-          <a class="dropdown-item" href="special events.html">events</a>
-
-          <!-- Add more items here as needed -->
+    <!-- header section starts -->
+    <div class="hero_area">
+        <div class="bg-box">
+            <img src="images/hero-bg.jpg" alt="">
         </div>
-      </li>
-    </ul>
-          <div class="user_option">
-            <a href="order_online.html" class="order_online">
-              Order Online
-            </a>
-          </div>
+        <!-- header section starts -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            Game Day Grill
+                        </span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""> </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="book.html">Book Table</a>
+                                <!-- More Option with Dropdown -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        More
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
+                                        <a class="dropdown-item" href="team.html">Team</a>
+                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                        <a class="dropdown-item" href="special events.html">events</a>
+                                    </div>
+                                </li>
+                        </ul>
+                        <div class="user_option">
+                            <a href="order_online.html" class="order_online">
+                                Order Online
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Events section starts here -->
+        <div class="event-bar public-event">
+            <div class="event-circle">
+                <!-- You can add an SVG icon or text here for public events -->
+                <span>🌐</span>
+            </div>
+            <div class="event-details">
+                <h3>Public Event 1</h3>
+                <p>Details about the public event.</p>
+            </div>
         </div>
-      </nav>
-    </div>
-  </header>
 
+        <div class="event-bar private-event">
+            <div class="event-circle">
+                <!-- You can add an SVG icon or text here for private events -->
+                <span>🔒</span>
+            </div>
+            <div class="event-details">
+                <h3>Private Event 2</h3>
+                <p>Details about the private event.</p>
+            </div>
+        </div>
 
-
-
-
-
-
-
+        <div class="event-bar special-event">
+            <div class="event-circle">
+                <!-- You can add an SVG icon or text here for special events -->
+                <span>⭐</span>
+            </div>
+            <div class="event-details">
+                <h3>Special Event 3</h3>
+                <p>Details about the special event.</p>
+            </div>
+        </div>
 
 
 <!-- footer section -->
