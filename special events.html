@@ -22,8 +22,7 @@
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <!-- owl slider stylesheet -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <!-- nice select -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
         integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
@@ -34,6 +33,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
+
     <style>
         /* Add custom styles for the header background */
         .header_section {
@@ -57,9 +57,12 @@
             overflow: hidden;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+            max-width: 600px; /* Set a maximum width for the events section */
+            margin: 0 auto; /* Center the events section on the page */
         }
 
-        .event-circle {
+        .event-icon {
+            flex-shrink: 0; /* Prevent the icon from shrinking */
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -72,8 +75,9 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
         }
 
-        .event-circle span {
-            font-size: 24px;
+        .event-icon svg {
+            width: 40px; /* Adjust the size of the SVG icon */
+            height: 40px;
         }
 
         .event-details {
@@ -130,18 +134,19 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="book.html">Book Table</a>
-                                <!-- More Option with Dropdown -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        More
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
-                                        <a class="dropdown-item" href="team.html">Team</a>
-                                        <a class="dropdown-item" href="contact.html">Contact</a>
-                                        <a class="dropdown-item" href="special events.html">events</a>
-                                    </div>
-                                </li>
+                            </li>
+                            <!-- More Option with Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    More
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
+                                    <a class="dropdown-item" href="team.html">Team</a>
+                                    <a class="dropdown-item" href="contact.html">Contact</a>
+                                    <a class="dropdown-item" href="special events.html">events</a>
+                                </div>
+                            </li>
                         </ul>
                         <div class="user_option">
                             <a href="order_online.html" class="order_online">
@@ -155,21 +160,34 @@
 
         <!-- Events section starts here -->
         <div class="event-bar public-event">
-            <div class="event-circle">
-                <!-- You can add an SVG icon or text here for public events -->
-                <span>🌐</span>
+            <div class="event-icon">
+                <!-- SVG icon for public events -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                </svg>
             </div>
             <div class="event-details">
                 <h3>Public Event 1</h3>
                 <p>Details about the public event.</p>
             </div>
         </div>
+        <hr style="margin: 20px 0;">
+        <hr style="margin: 20px 0;">
+        <hr style="margin: 20px 0;">
 
         <div class="event-bar private-event">
-            <div class="event-circle">
-                <!-- You can add an SVG icon or text here for private events -->
-                <span>🔒</span>
+            <div class="event-icon">
+                <!-- SVG icon for private events -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                </svg>
             </div>
+            <hr style="margin: 20px 0;">
+            <hr style="margin: 20px 0;">
+            <hr style="margin: 20px 0;">
+
             <div class="event-details">
                 <h3>Private Event 2</h3>
                 <p>Details about the private event.</p>
@@ -177,10 +195,17 @@
         </div>
 
         <div class="event-bar special-event">
-            <div class="event-circle">
-                <!-- You can add an SVG icon or text here for special events -->
-                <span>⭐</span>
+            <div class="event-icon">
+                <!-- SVG icon for special events -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                </svg>
             </div>
+            <hr style="margin: 20px 0;">
+            <hr style="margin: 20px 0;">
+            <hr style="margin: 20px 0;">
+
             <div class="event-details">
                 <h3>Special Event 3</h3>
                 <p>Details about the special event.</p>
