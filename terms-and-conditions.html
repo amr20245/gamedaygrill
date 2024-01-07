@@ -1,199 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+    <title>Game Day Grill - Events</title>
+    <!-- HubSpot Embed Code -->
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/44192916.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <!-- for the themes page only -->
+    <link rel="stylesheet" type="text/css" href="css/styleforteams.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- nice select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+        integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+        crossorigin="anonymous" />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+        /* Add custom styles for the header background */
+        .header_section {
+            background-color: #333;
+            color: #fff;
+        }
 
-  <title> Game Day Grill </title>
+        /* Add custom styles for the main content background */
+        body {
+            background-color: #fff;
+        }
 
-  <!-- HubSpot Embed Code -->
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/44192916.js"></script>
-  <!-- End of HubSpot Embed Code -->
-<!--for the theams page only -->
-<link rel="stylesheet" type="text/css" href="css/styleforteams.css"
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        /* Additional styles for events section */
+        .event-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px; /* Increased margin for more spacing */
+            padding: 30px; /* Increased padding for a larger block */
+            position: relative;
+            z-index: 2;
+            border-radius: 30px; /* Increased border-radius for a rounder shape */
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+        }
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- nice select  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+        .event-circle {
+            width: 100px; /* Increased width for a larger circle */
+            height: 100px; /* Increased height for a larger circle */
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 30px; /* Increased margin for more spacing */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+        }
 
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+        .event-circle span {
+            font-size: 40px; /* Increased font size for larger text */
+        }
 
-  <style>
-    /* Add custom styles for the header background */
-    .header_section {
-      background-color: #333; /* Change this to your desired header background color */
-      color: #fff; /* Change this to your desired text color for the header */
-    }
+        /* You can customize the colors and styles further */
+        .public-event {
+            background-color: #e5f7ff;
+        }
 
-    /* Add custom styles for the main content background */
-    body {
-      background-color: #fff; /* Change this to your desired main content background color */
-    }
-  </style>
+        .private-event {
+            background-color: #ffd3d3;
+        }
+
+        .special-event {
+            background-color: #f9f9f9;
+        }
+
+        /* Add custom styles for centering content */
+        .container-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+    </style>
 </head>
 
 <body class="sub_page">
 
- <!-- header section starts -->
-
- <body class="sub_page">
-  <div class="hero_area">
-    <div class="bg-box">
-      <img src="images/hero-bg.jpg" alt="">
-    </div>
-  <!-- header section starts -->
-  <header class="header_section">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand" href="index.html">
-          <span>
-            Game Day Grill
-          </span>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""> </span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span> </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="book.html">Book Table</a>
-             <!-- More Option with Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button" data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="false">
-          More
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
-          <a class="dropdown-item" href="team.html">Team</a>
-          <a class="dropdown-item" href="contact.html">Contact</a>
-          <a class="dropdown-item" href="special events.html">Events</a>
-          <a class="dropdown-item" href="terms-and-conditions.html">Terms and conditions</a>
-          <!-- Add more items here as needed -->
+    <!-- header section starts -->
+    <div class="hero_area">
+        <div class="bg-box">
+            <img src="images/hero-bg.jpg" alt="">
         </div>
-      </li>
-    </ul>
-          <div class="user_option">
-            <a href="order_online.html" class="order_online">
-              Order Online
-            </a>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-    <!-- end header section -->
-  </div>
-<!--this is seat hjere to know wher ei am at -->
-<section class="food_section layout_padding">
+        <!-- header section starts -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            Game Day Grill
+                        </span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""> </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="book.html">Book Table</a>
+                                <!-- More Option with Dropdown -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        More
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
+                                        <a class="dropdown-item" href="team.html">Team</a>
+                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                        <a class="dropdown-item" href="special events.html">events</a>
+                                        <a class="dropdown-item" href="terms-and-conditions.html">Terms and conditions</a>
+
+                                    </div>
+                                </li>
+                        </ul>
+                        <div class="user_option">
+                            <a href="order_online.html" class="order_online">
+                                Order Online
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+ <!-- Terms and Conditions section -->
+ <section class="terms_and_conditions">
   <div class="container">
-    <div class="heading_container heading_center">
-      <h2>
-        Our Team
-      </h2>
-    </div>
-      <div class="row grid">
-        <div class="col-sm-6 col-lg-4 all appetizers">
-          <div class="box">
-            <div>
-              <div class="images">
-                <img src="images/" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-Amr Daraghmeh
-                </h5>
-                <p>
-Team manger 
-                </p>
-                <div class="options">
-                  <h6>
-                  </h6>
+      <h2>Terms and Conditions</h2>
+      <p>
+          Welcome to Game Day Grill! Please read our terms and conditions  <a href="path/to/terms_and_conditions.pdf" target="_blank">Terms and Conditions</a> carefully.
+      </p>
+      <!-- Add more content or details about your terms and conditions here -->
+  </div>
+</section>
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 all appetizers">
-          <div class="box">
-            <div>
-              <div class="images">
-                <img src="images/ultimate-loaded-crispy-potato-skins-recipe_500x286.webp" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                 colton
-                </h5>
-                <p>
-sjhqb                </p>
-                <div class="options">
-                  <h6>
-                  </h6>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 all appetizers text-center">
-          <div class="box">
-            <div>
-              <div class="images">
-                <img src="images/ultimate-loaded-crispy-potato-skins-recipe_500x286.webp" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Amr Daraghmeh
-                </h5>
-                <p>
-                  Develeber 
-                </p>
-                <div class="options">
-                  <h6>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         
-
-      </section>
-
-  <!-- footer section -->
-  <footer class="footer_section">
+<!-- footer section -->
+<footer class="footer_section">
     <div class="container">
       <div class="row">
         <div class="col-md-4 footer-col">
@@ -289,3 +271,12 @@ sjhqb                </p>
  
  </body>
  
+
+
+
+
+
+
+
+
+
