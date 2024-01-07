@@ -98,16 +98,63 @@
             height: 100vh;
             flex-direction: column;
         }
+
+        /* Add custom styles for the text overlay */
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .text-overlay h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .text-overlay p {
+            font-size: 18px;
+        }
+
+        /* Add custom styles for the footer */
+        .footer_section {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .footer_section h4 {
+            color: #fff;
+        }
+
+        .footer_section a {
+            color: #fff;
+        }
+
+        .footer_social a {
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .footer-info {
+            margin-top: 20px;
+        }
     </style>
 </head>
 
 <body class="sub_page">
-
-    <!-- header section starts -->
-    <div class="hero_area">
-        <div class="bg-box">
-            <img src="images/hero-bg.jpg" alt="">
+    <header class="header_section">
+        <div class="hero_area">
+            <div class="bg-box">
+                <img src="images/hero-bg.jpg" alt="">
+                <div class="text-overlay">
+                         </div>
+            </div>
         </div>
+
         <!-- header section starts -->
         <header class="header_section">
             <div class="container">
@@ -146,7 +193,7 @@
                                         <a class="dropdown-item" href="team.html">Team</a>
                                         <a class="dropdown-item" href="contact.html">Contact</a>
                                         <a class="dropdown-item" href="special events.html">events</a>
-                                        <a class="dropdown-item" href="terms-and-conditions.html">events</a>
+                                        <a class="dropdown-item" href="terms-and-conditions.html">Terms and conditions</a>
 
                                     </div>
                                 </li>
@@ -161,18 +208,13 @@
             </div>
         </header>
 
-
- <!-- Terms and Conditions section -->
- <section class="terms_and_conditions">
-  <div class="container">
-      <h2>Terms and Conditions</h2>
-      <p>
-          Welcome to Game Day Grill! Please read our terms and conditions  <a href="path/to/terms_and_conditions.pdf" target="_blank">Terms and Conditions</a> carefully.
-      </p>
-      <!-- Add more content or details about your terms and conditions here -->
-  </div>
-</section>
-
+<!-- Terms and Conditions section -->
+    <section class="container-center">
+        <h2>Terms and Conditions</h2>
+        <p>This website is a project created for educational purposes. Any resemblance to real events or locales is purely coincidental.</p>
+        <!-- Add more terms and conditions as needed -->
+    </section>
+ 
         
 <!-- footer section -->
 <footer class="footer_section">
