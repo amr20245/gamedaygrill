@@ -571,6 +571,7 @@ a:focus {
     margin-top: 45px;
 
     a {
+      color:white;
       @include hero_btn($primary1, $white, 10px, 55px, 45px);
     }
   }
