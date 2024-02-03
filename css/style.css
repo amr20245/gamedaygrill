@@ -616,7 +616,7 @@ a:focus {
 }
 
 .about_section {
-  background: url('images/') no-repeat center center fixed;
+  background: url('images/hero-bg.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
 }
