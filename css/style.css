@@ -616,7 +616,8 @@ a:focus {
 }
 
 .about_section {
-  background: #222831;
+  background: url('images/') no-repeat center center fixed;
+  background-size: cover;
   color: #ffffff;
 }
 
