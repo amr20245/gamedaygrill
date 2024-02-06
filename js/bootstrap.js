@@ -1,8 +1,4 @@
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
 (function (global, factory) {
     typeof exports === "object" && typeof module !== "undefined"
         ? factory(exports, require("jquery"), require("popper.js"))
@@ -78,21 +74,11 @@
         subClass.__proto__ = superClass;
     }
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v4.3.1): util.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Private TransitionEnd Helpers
-     * ------------------------------------------------------------------------
-     */
+    
 
     var TRANSITION_END = "transitionend";
     var MAX_UID = 1000000;
-    var MILLISECONDS_MULTIPLIER = 1000; // Shoutout AngusCroll (https://goo.gl/pxwQGp)
+    var MILLISECONDS_MULTIPLIER = 1000; 
 
     function toType(obj) {
         return {}.toString
@@ -110,7 +96,7 @@
                     return event.handleObj.handler.apply(this, arguments); // eslint-disable-line prefer-rest-params
                 }
 
-                return undefined; // eslint-disable-line no-undefined
+                return undefined; 
             },
         };
     }
@@ -134,11 +120,7 @@
         $.fn.emulateTransitionEnd = transitionEndEmulator;
         $.event.special[Util.TRANSITION_END] = getSpecialTransitionEndEvent();
     }
-    /**
-     * --------------------------------------------------------------------------
-     * Public Util Api
-     * --------------------------------------------------------------------------
-     */
+
 
     var Util = {
         TRANSITION_END: "bsTransitionEnd",
@@ -169,8 +151,7 @@
         ) {
             if (!element) {
                 return 0;
-            } // Get transition-duration of the element
-
+            }
             var transitionDuration = $(element).css("transition-duration");
             var transitionDelay = $(element).css("transition-delay");
             var floatTransitionDuration = parseFloat(transitionDuration);
@@ -178,7 +159,7 @@
 
             if (!floatTransitionDuration && !floatTransitionDelay) {
                 return 0;
-            } // If multiple durations are defined, take the first
+            }
 
             transitionDuration = transitionDuration.split(",")[0];
             transitionDelay = transitionDelay.split(",")[0];
