@@ -23,7 +23,11 @@ body {
   padding-bottom:1%;
   max-width: 100%;
 }
-
+.under_deals{
+  position: relative;
+  padding-top:10%;
+  padding-bottom:10%;
+}
 #centeredImage {
   max-width: 100%;
   height: auto;
