@@ -313,16 +313,18 @@ a:focus {
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
-  padding: 45px 0 75px 0;
+  padding: 20px 0; /* Adjust the top and bottom padding as needed */
+  max-height: 500px!important; /* Add a maximum height to limit the size */
+  height: 200px ; /* Set a specific height */
 }
 
 .slider_section .row {
