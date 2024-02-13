@@ -637,23 +637,17 @@ a:focus {
 .about_section {
   background: url('images/hero-bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #ffffff;
+  color: #ffffff; /* Set the color explicitly */
 }
 
 .about_section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center; /* No need for vendor prefixes for align-items */
 }
 
 .about_section .img-box {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .about_section .img-box img {
@@ -665,15 +659,15 @@ a:focus {
 
 .about_section .detail-box p {
   margin-top: 15px;
+  color: #ffffff; /* Set the color explicitly */
 }
 
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
   background-color: #ffbe33;
-  color: #ffffff;
+  color: #ffffff; /* Set the color explicitly */
   border-radius: 45px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
   margin-top: 15px;
@@ -682,6 +676,7 @@ a:focus {
 .about_section .detail-box a:hover {
   background-color: #e69c00;
 }
+
 
 .book_section {
   position: relative;
