@@ -240,7 +240,25 @@ a:focus {
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
   color: #ffbe33;
 }
-
+.order-online-container {
+  margin-left: auto;
+  margin-right: 0;
+}
+.user_option{
+  padding-bottom:40px;
+}
+.user_option .order_online {
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 20px;
+  margin-right: 10px; /* Add margin to the right side */
+}
 .custom_nav-container .nav_search-btn {
   width: auto;
   height: auto;
@@ -1092,6 +1110,7 @@ a:focus {
     width: auto; /* Maintain the aspect ratio */
     display: block; /* Remove any default inline styling */
     margin: 0 auto; /* Center the image */
+    
   }
 
   
